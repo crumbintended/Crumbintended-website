@@ -4,11 +4,74 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Custom Cakes | Crumb Intended Baking Co.</title>
 <style>
-:root{--cream:#f8f3e8;--sage:#8c9b7b;--olive:#344832;--ink:#354334;--paper:#fffdf7}
-*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,serif;line-height:1.6}
-header{text-align:center;background:var(--paper);padding:25px 15px;border-bottom:1px solid #d8ddcd}
-.brand{font-size:clamp(22px,4vw,35px);letter-spacing:.05em;color:var(--olive)}
-nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:16px}a{color:var(--olive);text-decoration:none}nav a:hover{text-decoration:underline}
+
+:root {
+  --cream: #faf7ef;
+  --sage: #a7b49b;
+  --olive: #485640;
+  --dark: #343b30;
+  --white: #fffdf8;
+  --border: #dcded2;
+  --ink: #343b30;
+  --paper: #fffdf8;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  padding: 28px 20px 20px;
+}
+.brand {
+  color: var(--olive);
+  font-size: 27px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: normal;
+}
+.tagline {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7d8975;
+  margin-top: 5px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--olive);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+@media (max-width: 600px) {
+  nav {
+    gap: 15px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+}
+
 main{max-width:1040px;margin:auto;padding:50px 22px}h1,h2{text-align:center;font-weight:normal;color:var(--olive)}h1{font-size:clamp(38px,6vw,62px);margin:0}
 .eyebrow{text-align:center;letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#68795e}
 .intro{text-align:center;max-width:650px;margin:20px auto 55px}.ornament{text-align:center;font-size:28px;color:var(--sage)}
@@ -22,8 +85,22 @@ footer{text-align:center;padding:35px 15px;font-size:14px}footer a{text-decorati
 </style>
 </head>
 <body>
-<header><div class="brand">Crumb Intended Baking Co.</div>
-<nav><a href="index.html">Home</a><a href="menu.html">Our Menu</a><a href="custom-cakes.html" aria-current="page">Custom Cakes</a><a href="events.html">Events</a></nav></header>
+
+<header>
+  <a class="brand" href="index.html">
+    Crumb Intended
+  </a>
+  <div class="tagline">
+    Baking Co.
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Our Menu</a>
+    <a href="custom-cakes.html" class="active">Custom Cakes</a>
+    <a href="events.html">Events</a>
+  </nav>
+</header>
+
 <main>
 <p class="eyebrow">Thoughtfully baked · Beautifully celebrated</p>
 <h1>Custom Cakes</h1><div class="ornament">❧</div>

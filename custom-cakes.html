@@ -1,130 +1,95 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Custom cakes from Crumb Intended Baking Co. for birthdays, showers, milestones, and moments worth celebrating.">
+<meta name="theme-color" content="#f8f5ec">
 <title>Custom Cakes | Crumb Intended Baking Co.</title>
-<style>
-
-:root {
-  --cream: #faf7ef;
-  --sage: #a7b49b;
-  --olive: #485640;
-  --dark: #343b30;
-  --white: #fffdf8;
-  --border: #dcded2;
-  --ink: #343b30;
-  --paper: #fffdf8;
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--dark);
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.7;
-}
-header {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
-  text-align: center;
-  padding: 28px 20px 20px;
-}
-.brand {
-  color: var(--olive);
-  font-size: 27px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-weight: normal;
-}
-.tagline {
-  font-size: 12px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #7d8975;
-  margin-top: 5px;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 24px;
-}
-nav a {
-  text-decoration: none;
-  color: var(--olive);
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-nav a:hover,
-nav a.active {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-}
-@media (max-width: 600px) {
-  nav {
-    gap: 15px;
-  }
-  nav a {
-    font-size: 12px;
-  }
-}
-
-main{max-width:1040px;margin:auto;padding:50px 22px}h1,h2{text-align:center;font-weight:normal;color:var(--olive)}h1{font-size:clamp(38px,6vw,62px);margin:0}
-.eyebrow{text-align:center;letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#68795e}
-.intro{text-align:center;max-width:650px;margin:20px auto 55px}.ornament{text-align:center;font-size:28px;color:var(--sage)}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:30px 0 55px}.placeholder{min-height:210px;background:#e8e9da;border:1px solid #d4d8c5;display:grid;place-items:center;text-align:center;padding:22px;color:#68775e;font-style:italic}
-.card{background:var(--paper);border:1px solid #d9dece;padding:clamp(22px,4vw,46px);max-width:780px;margin:auto;box-shadow:0 6px 25px #3448320a}
-.note{text-align:center;font-size:14px;color:#5d6b58}form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
-label{display:block;font-size:14px;margin-bottom:6px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd2c3;background:#fff;color:var(--ink);font:inherit;font-size:15px;border-radius:2px}textarea{min-height:120px;resize:vertical}
-.full{grid-column:1/-1}button{background:var(--olive);color:white;border:0;padding:15px 28px;font:inherit;cursor:pointer}button:hover{background:#4e6848}
-footer{text-align:center;padding:35px 15px;font-size:14px}footer a{text-decoration:underline}
-@media(max-width:680px){.gallery{grid-template-columns:1fr}form{grid-template-columns:1fr}}
-</style>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-  <a class="brand" href="index.html">
-    Crumb Intended
-  </a>
-  <div class="tagline">
-    Baking Co.
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-accent" aria-hidden="true"></div>
+  <div class="wrap header-bar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-text">Crumb Intended<small>Baking Co.</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="custom-cakes.html" aria-current="page">Custom Cakes</a>
+      <a href="events.html">Events</a>
+    </nav>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Our Menu</a>
-    <a href="custom-cakes.html" class="active">Custom Cakes</a>
-    <a href="events.html">Events</a>
-  </nav>
 </header>
-
-<main>
-<p class="eyebrow">Thoughtfully baked · Beautifully celebrated</p>
-<h1>Custom Cakes</h1><div class="ornament">❧</div>
-<p class="intro">For birthdays, showers, milestones, and all the little moments worth celebrating. Tell us what you’re dreaming of, and we’ll see what we can create together.</p>
-<h2>A Little Gallery of Sweet Moments</h2>
-<div class="gallery"><div class="placeholder">Your cake photo<br>coming soon</div><div class="placeholder">Your cake photo<br>coming soon</div><div class="placeholder">Your cake photo<br>coming soon</div></div>
-<section class="card">
-<p class="eyebrow">Made just for your occasion</p><h2>Let's Make Something Sweet</h2>
-<p class="note">Share a few details below. This is an inquiry only; availability, design, pricing, and orders are confirmed separately.</p>
-<!-- To activate: create a free Formspree form, then replace YOUR_FORM_ID in the action URL with your real form ID. Configure notifications to crumbintended@gmail.com in Formspree. -->
-<form action="https://formspree.io/f/moeeryva" method="POST" enctype="multipart/form-data">
-<div><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required></div>
-<div><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-<div><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
-<div><label for="date">Event date *</label><input id="date" name="event_date" type="date" required></div>
-<div><label for="occasion">Occasion</label><input id="occasion" name="occasion" placeholder="Birthday, shower, etc."></div>
-<div><label for="servings">Approximate servings</label><input id="servings" name="servings" type="number" min="1" placeholder="e.g. 20"></div>
-<div><label for="size">Preferred cake size</label><select id="size" name="cake_size"><option value="">Not sure yet</option><option>6-inch round</option><option>8-inch round</option><option>10-inch round</option><option>Tiered cake</option><option>Other / please advise</option></select></div>
-<div><label for="flavor">Flavor preferences</label><input id="flavor" name="flavors" placeholder="Tell us your favorites"></div>
-<div class="full"><label for="design">Design ideas, colors & details *</label><textarea id="design" name="design_ideas" required placeholder="Describe your vision, theme, or inspiration..."></textarea></div>
-<div class="full"><label for="photos">Inspiration photos (optional)</label><input id="photos" name="attachment" type="file" accept="image/*"><small>File uploads require a compatible form-service plan. If uploads aren't enabled, customers can email inspiration images after you reply.</small></div>
-<div class="full"><button type="submit">Send My Cake Inquiry</button></div>
-</form>
-<p class="note">Prefer email? Reach us at <a href="mailto:crumbintended@gmail.com">crumbintended@gmail.com</a>.</p>
-</section></main>
-<footer>Crumb Intended Baking Co. · Baked with care, meant to be shared.</footer>
-</body></html>
+<main id="main">
+  <section class="page-hero">
+    <img class="page-hero-willow" src="assets/willow.webp" alt="" width="1600" height="716" aria-hidden="true">
+    <div class="wrap">
+      <p class="eyebrow">Thoughtfully baked · Beautifully celebrated</p>
+      <h1>Custom Cakes</h1>
+      <p class="lede">For birthdays, showers, milestones, and all the little moments worth celebrating. Tell us what you’re dreaming of, and we’ll see what we can create together.</p>
+    </div>
+  </section>
+  <div class="wrap page-body">
+    <h2 class="section-title center">A Little Gallery of Sweet Moments</h2>
+    <div class="gallery">
+      <div class="frame"><div class="frame-mat">Your cake photo<br>coming soon</div></div>
+      <div class="frame"><div class="frame-mat">Your cake photo<br>coming soon</div></div>
+      <div class="frame"><div class="frame-mat">Your cake photo<br>coming soon</div></div>
+    </div>
+    <section class="inquiry">
+      <div class="inquiry-head center">
+        <p class="eyebrow">Made just for your occasion</p>
+        <h2 class="section-title">Let's Make Something Sweet</h2>
+        <p class="note">Share a few details below. This is an inquiry only; availability, design, pricing, and orders are confirmed separately.</p>
+      </div>
+      <!-- To activate: create a free Formspree form, then replace YOUR_FORM_ID in the action URL with your real form ID. Configure notifications to crumbintended@gmail.com in Formspree. -->
+      <form action="https://formspree.io/f/moeeryva" method="POST" enctype="multipart/form-data">
+        <div class="form-grid">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="date">Event date *</label><input id="date" name="event_date" type="date" required></div>
+          <div class="field"><label for="occasion">Occasion</label><input id="occasion" name="occasion" placeholder="Birthday, shower, etc."></div>
+          <div class="field"><label for="servings">Approximate servings</label><input id="servings" name="servings" type="number" min="1" placeholder="e.g. 20"></div>
+          <div class="field"><label for="size">Preferred cake size</label><select id="size" name="cake_size"><option value="">Not sure yet</option><option>6-inch round</option><option>8-inch round</option><option>10-inch round</option><option>Tiered cake</option><option>Other / please advise</option></select></div>
+          <div class="field"><label for="flavor">Flavor preferences</label><input id="flavor" name="flavors" placeholder="Tell us your favorites"></div>
+          <div class="field full"><label for="design">Design ideas, colors &amp; details *</label><textarea id="design" name="design_ideas" required placeholder="Describe your vision, theme, or inspiration..."></textarea></div>
+          <div class="field full"><label for="photos">Inspiration photos (optional)</label><input id="photos" name="attachment" type="file" accept="image/*"><small>File uploads require a compatible form-service plan. If uploads aren't enabled, customers can email inspiration images after you reply.</small></div>
+          <div class="field full form-actions"><button class="button" type="submit">Send My Cake Inquiry</button></div>
+        </div>
+      </form>
+      <p class="note email-note">Prefer email? Reach us at <a href="mailto:crumbintended@gmail.com">crumbintended@gmail.com</a>.</p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-name">Crumb Intended</p>
+      <p class="footer-tag">Baking Co.</p>
+    </div>
+    <p class="footer-note">Crumb Intended Baking Co. · Baked with care, meant to be shared.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="custom-cakes.html">Custom Cakes</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

@@ -3,333 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Events | Crumb Intended Baking Co.</title>
-
-  <meta name="description"
-        content="Find Crumb Intended Baking Co. at upcoming farmers markets, pop-ups, and local events in Massachusetts.">
-
-  <style>
-    :root {
-      --cream: #faf7ef;
-      --sage: #a7b49b;
-      --olive: #485640;
-      --dark: #343b30;
-      --white: #fffdf8;
-      --border: #dcded2;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--dark);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
-    }
-
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      text-align: center;
-      padding: 28px 20px 20px;
-    }
-
-    .brand {
-      color: var(--olive);
-      font-size: 27px;
-      letter-spacing: 2px;
-      text-decoration: none;
-      font-weight: normal;
-    }
-
-    .tagline {
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #7d8975;
-      margin-top: 5px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      margin-top: 24px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--olive);
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
-
-    nav a:hover,
-    nav a.active {
-      text-decoration: underline;
-      text-underline-offset: 6px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 85px 20px 65px;
-      background: linear-gradient(
-        180deg,
-        #edf0e6 0%,
-        var(--cream) 100%
-      );
-    }
-
-    .eyebrow {
-      font-size: 12px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: #7a8b70;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-size: clamp(38px, 6vw, 62px);
-      font-weight: normal;
-      color: var(--olive);
-      margin: 0 0 20px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      max-width: 620px;
-      margin: auto;
-      font-size: 17px;
-    }
-
-    .divider {
-      text-align: center;
-      color: var(--sage);
-      font-size: 27px;
-      letter-spacing: 12px;
-      margin: 20px 0;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 35px 20px 90px;
-    }
-
-    .coming-soon {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 70px 35px;
-      text-align: center;
-      box-shadow: 0 8px 30px rgba(52, 59, 48, 0.04);
-    }
-
-    .leaf {
-      font-size: 35px;
-      color: var(--sage);
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      font-size: 34px;
-      font-weight: normal;
-      color: var(--olive);
-      margin: 0 0 22px;
-    }
-
-    .coming-soon p {
-      max-width: 580px;
-      margin: 0 auto 20px;
-      font-size: 16px;
-    }
-
-    .highlight {
-      font-style: italic;
-      color: #7a8b70;
-    }
-
-    .contact {
-      text-align: center;
-      margin-top: 75px;
-    }
-
-    .contact h2 {
-      font-size: 30px;
-    }
-
-    .contact p {
-      max-width: 600px;
-      margin: 0 auto 25px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 30px;
-      background: var(--olive);
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      border-radius: 3px;
-      transition: background 0.2s;
-    }
-
-    .button:hover {
-      background: #66765b;
-    }
-
-    footer {
-      background: #e8ecdf;
-      padding: 35px 20px;
-      text-align: center;
-      color: var(--olive);
-      font-size: 13px;
-    }
-
-    footer a {
-      color: var(--olive);
-      text-decoration: none;
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        padding: 60px 20px 45px;
-      }
-
-      .coming-soon {
-        padding: 45px 22px;
-      }
-
-      nav {
-        gap: 15px;
-      }
-
-      nav a {
-        font-size: 12px;
-      }
-    }
-  </style>
+  <meta name="description" content="Find Crumb Intended Baking Co. at upcoming farmers markets, pop-ups, and local events in Massachusetts.">
+  <meta name="theme-color" content="#f8f5ec">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  <header>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-accent" aria-hidden="true"></div>
+  <div class="wrap header-bar">
     <a class="brand" href="index.html">
-      Crumb Intended
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-text">Crumb Intended<small>Baking Co.</small></span>
     </a>
-
-    <div class="tagline">
-      Baking Co.
-    </div>
-
-    <nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="menu.html">Our Menu</a>
       <a href="custom-cakes.html">Custom Cakes</a>
-      <a href="events.html" class="active">Events</a>
+      <a href="events.html" aria-current="page">Events</a>
     </nav>
-  </header>
-
-  <section class="hero">
-    <div class="eyebrow">
-      Markets · Pop-Ups · Sweet Gatherings
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <img class="page-hero-willow" src="assets/willow.webp" alt="" width="1600" height="716" aria-hidden="true">
+    <div class="wrap">
+      <p class="eyebrow">Markets · Pop-Ups · Sweet Gatherings</p>
+      <h1>Find Us Around Town</h1>
+      <p class="lede">There's nothing sweeter than sharing something homemade with our community. Follow along to see where Crumb Intended Baking Co. will be popping up next!</p>
     </div>
-
-    <h1>Find Us Around Town</h1>
-
-    <p>
-      There's nothing sweeter than sharing something
-      homemade with our community.
-      Follow along to see where Crumb Intended
-      Baking Co. will be popping up next!
-    </p>
   </section>
-
-  <main>
-
-    <div class="divider">✦ ✦ ✦</div>
-
-    <section class="coming-soon">
-
-      <div class="leaf">❦</div>
-
-      <div class="eyebrow">
-        Upcoming Events
+  <div class="wrap page-body">
+    <div class="ornament" aria-hidden="true"><span></span></div>
+    <section class="announcement">
+      <div class="announcement-intro">
+        <p class="eyebrow">Upcoming Events</p>
+        <h2>Something Sweet Is Coming</h2>
       </div>
-
-      <h2>Something Sweet Is Coming</h2>
-
-      <p>
-        We're busy whipping up something special!
-      </p>
-
-      <p>
-        Crumb Intended Baking Co. is getting ready
-        to bring our homemade cookies, sweet loaves,
-        brownies, and other delicious treats
-        to local farmers markets and community events.
-      </p>
-
-      <p>
-        Our upcoming market dates and pop-up
-        locations will be announced right here.
-      </p>
-
-      <p class="highlight">
-        Stay tuned — we can't wait to meet you!
-      </p>
-
+      <div class="announcement-body">
+        <p>We're busy whipping up something special!</p>
+        <p>Crumb Intended Baking Co. is getting ready to bring our homemade cookies, sweet loaves, brownies, and other delicious treats to local farmers markets and community events.</p>
+        <p>Our upcoming market dates and pop-up locations will be announced right here.</p>
+        <p class="highlight">Stay tuned — we can't wait to meet you!</p>
+      </div>
     </section>
-
-    <section class="contact">
-
-      <div class="eyebrow">
-        Let's Get Together
-      </div>
-
+  </div>
+  <section class="invite center">
+    <div class="wrap">
+      <p class="eyebrow">Let's Get Together</p>
       <h2>Have an Event in Mind?</h2>
-
-      <p>
-        Planning a community event, local market,
-        or special gathering?
-        We'd love to hear from you!
-      </p>
-
-      <a
-        class="button"
-        href="mailto:crumbintended@gmail.com?subject=Event%20Inquiry"
-      >
-        Get in Touch
-      </a>
-
-    </section>
-
-  </main>
-
-  <footer>
-
-    <p>
-      Made with love, butter & a little bit of magic.
-    </p>
-
-    <p>
-      © 2026 Crumb Intended Baking Co.
-    </p>
-
-    <p>
-      <a href="mailto:crumbintended@gmail.com">
-        crumbintended@gmail.com
-      </a>
-    </p>
-
-  </footer>
-
+      <p class="lede">Planning a community event, local market, or special gathering? We'd love to hear from you!</p>
+      <div class="actions">
+        <a class="button light" href="mailto:crumbintended@gmail.com?subject=Event%20Inquiry">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-name">Crumb Intended</p>
+      <p class="footer-tag">Baking Co.</p>
+    </div>
+    <div>
+      <p class="footer-note">Made with love, butter &amp; a little bit of magic.</p>
+      <p class="footer-note">© 2026 Crumb Intended Baking Co.</p>
+      <p class="footer-note"><a href="mailto:crumbintended@gmail.com">crumbintended@gmail.com</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="custom-cakes.html">Custom Cakes</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>

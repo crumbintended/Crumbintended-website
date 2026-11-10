@@ -1,99 +1,110 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Comforting classics, a little nostalgia, and a few Greek-inspired favorites from Crumb Intended Baking Co.">
+<meta name="theme-color" content="#f8f5ec">
 <title>Our Menu | Crumb Intended Baking Co.</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--cream:#faf6ed;--sage:#a6b49b;--olive:#354b3c;--ink:#2c362c;--line:#d9dfd2}
-*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.7}a{color:inherit}nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.9rem}nav a[aria-current]{border-bottom:1px solid var(--olive)}main{max-width:1050px;margin:auto;padding:0 24px 75px}.hero{text-align:center;padding:75px 12px 52px}.eyebrow{color:#647864;letter-spacing:.24em;text-transform:uppercase;font-size:.75rem}.hero h1{font:500 clamp(2.8rem,7vw,5rem) 'Playfair Display',serif;color:var(--olive);margin:12px 0}.hero p{max-width:590px;margin:0 auto}.ornament{font-size:1.8rem;color:#82967c;margin-top:20px}section{padding:35px 0 18px;border-top:1px solid var(--line)}h2{font:500 2.15rem 'Playfair Display',serif;color:var(--olive);margin:0 0 8px}.section-intro{margin:0 0 25px;color:#5c6b5b}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.item{background:#fffdf7;border:1px solid var(--line);padding:25px 26px;border-radius:3px}.item h3{font:500 1.35rem 'Playfair Display',serif;color:var(--olive);margin:0 0 8px}.item p{margin:0;font-size:.95rem}.soon{background:#edf0e8;padding:30px;margin-top:30px;border:1px solid var(--line)}footer{text-align:center;background:var(--olive);color:#f8f4ea;padding:28px 15px;font-size:.85rem}@media(max-width:650px){.grid{grid-template-columns:1fr}header{justify-content:center;text-align:center}nav{justify-content:center;gap:14px}.hero{padding-top:55px}}
-
-header {
-  background: #fffdf8;
-  border-bottom: 1px solid #dcded2;
-  text-align: center;
-  padding: 28px 20px 20px;
-  display: block;
-}
-
-.brand {
-  color: #485640;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 27px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.tagline {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 12px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #7d8975;
-  margin-top: 5px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 24px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #485640;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-nav a:hover,
-nav a.active,
-nav a[aria-current] {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  border-bottom: none;
-}
-</style>
-  
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-<header>
-  <a class="brand" href="index.html">Crumb Intended</a>
-  <div class="tagline">Baking Co.</div>
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="menu.html" class="active" aria-current="page">Our Menu</a>
-    <a href="custom-cakes.html">Custom Cakes</a>
-    <a href="events.html">Events</a>
-  </nav>
+<body class="menu-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-accent" aria-hidden="true"></div>
+  <div class="wrap header-bar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-text">Crumb Intended<small>Baking Co.</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Our Menu</a>
+      <a href="custom-cakes.html">Custom Cakes</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </div>
 </header>
-
-<main>
-<div class="hero"><div class="eyebrow">Small batches · Made with care</div><h1>Our Menu</h1><p>Comforting classics, a little nostalgia, and a few Greek-inspired favorites. Made in small batches with thoughtful ingredients.</p><div class="ornament" aria-hidden="true">❦</div></div>
-<section><h2>Cookies</h2><p class="section-intro">A little something sweet, with every crumb.</p><div class="grid">
-<article class="item"><h3>Brown Butter Chocolate Chunk</h3><p>Nutty brown butter cookie with generous pieces of chocolate.</p></article>
-<article class="item"><h3>Pistachio &amp; Honey Butter</h3><p>A buttery cookie with pistachio and delicate honey notes.</p></article>
-<article class="item"><h3>Brown Butter Pecan</h3><p>Rich brown butter flavor with crunchy pecans.</p></article>
-<article class="item"><h3>Campfire S’mores</h3><p>Chocolate, graham cracker, and marshmallow-inspired campfire flavors.</p></article>
-</div></section>
-<section><h2>Loaves</h2><p class="section-intro">Tender, sliceable favorites for sharing—or keeping to yourself.</p><div class="grid">
-<article class="item"><h3>Baklava Swirl</h3><p>A bakery loaf inspired by the warm, nutty flavors of baklava.</p></article>
-<article class="item"><h3>Lemon Blueberry</h3><p>Bright lemon and bursts of blueberry in every slice.</p></article>
-<article class="item"><h3>Greek Orange Olive Oil</h3><p>Fragrant orange and olive oil, inspired by Greek home baking.</p></article>
-<article class="item"><h3>Banana Bread</h3><p>A cozy, classic banana loaf.</p></article>
-<article class="item"><h3>Pumpkin Bread</h3><p>Soft pumpkin loaf with warming spices.</p></article>
-</div></section>
-<section><h2>Brownies</h2><div class="grid"><article class="item"><h3>Fudgy Brownies</h3><p>Deeply chocolatey, rich, and satisfyingly fudgy.</p></article></div></section>
-<section><div class="soon"><div class="eyebrow">Coming Soon</div><h2>Cupcakes</h2><p>Three little celebrations in the making:</p><div class="grid">
-<article class="item"><h3>Midnight Chocolate</h3><p>Dark chocolate cake, chocolate buttercream, and chocolate curls.</p></article>
-<article class="item"><h3>Strawberry Shortcake</h3><p>Vanilla bean cake, freeze-dried strawberry buttercream, and shortcake crumble.</p></article>
-<article class="item"><h3>Salted Caramel Pretzel</h3><p>Brown sugar cake, caramel-flavored buttercream, and pretzel crunch.</p></article>
-</div></div></section>
-<p style="text-align:center;margin-top:45px;font-size:.85rem">Menu availability may vary. Please ask about ingredients and allergens before ordering.</p>
-</main><footer>Crumb Intended Baking Co. · Baked with care</footer>
-</body></html>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Small batches · Made with care</p>
+      <h1>Our Menu</h1>
+      <p class="lede">Comforting classics, a little nostalgia, and a few Greek-inspired favorites. Made in small batches with thoughtful ingredients.</p>
+    </div>
+  </section>
+  <div class="wrap page-body">
+    <section class="menu-block">
+      <div class="menu-block-head">
+        <h2>Cookies</h2>
+        <p class="section-intro">A little something sweet, with every crumb.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="item"><h3>Brown Butter Chocolate Chunk</h3><p>Nutty brown butter cookie with generous pieces of chocolate.</p></article>
+        <article class="item"><h3>Pistachio &amp; Honey Butter</h3><p>A buttery cookie with pistachio and delicate honey notes.</p></article>
+        <article class="item"><h3>Brown Butter Pecan</h3><p>Rich brown butter flavor with crunchy pecans.</p></article>
+        <article class="item"><h3>Campfire S’mores</h3><p>Chocolate, graham cracker, and marshmallow-inspired campfire flavors.</p></article>
+      </div>
+    </section>
+    <section class="menu-block">
+      <div class="menu-block-head">
+        <h2>Loaves</h2>
+        <p class="section-intro">Tender, sliceable favorites for sharing—or keeping to yourself.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="item"><h3>Baklava Swirl</h3><p>A bakery loaf inspired by the warm, nutty flavors of baklava.</p></article>
+        <article class="item"><h3>Lemon Blueberry</h3><p>Bright lemon and bursts of blueberry in every slice.</p></article>
+        <article class="item"><h3>Greek Orange Olive Oil</h3><p>Fragrant orange and olive oil, inspired by Greek home baking.</p></article>
+        <article class="item"><h3>Banana Bread</h3><p>A cozy, classic banana loaf.</p></article>
+        <article class="item"><h3>Pumpkin Bread</h3><p>Soft pumpkin loaf with warming spices.</p></article>
+      </div>
+    </section>
+    <section class="menu-block">
+      <div class="menu-block-head">
+        <h2>Brownies</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="item"><h3>Fudgy Brownies</h3><p>Deeply chocolatey, rich, and satisfyingly fudgy.</p></article>
+      </div>
+    </section>
+    <section class="menu-block soon">
+      <div class="menu-block-head">
+        <p class="eyebrow">Coming Soon</p>
+        <h2>Cupcakes</h2>
+        <p class="section-intro">Three little celebrations in the making:</p>
+      </div>
+      <div class="menu-grid">
+        <article class="item"><h3>Midnight Chocolate</h3><p>Dark chocolate cake, chocolate buttercream, and chocolate curls.</p></article>
+        <article class="item"><h3>Strawberry Shortcake</h3><p>Vanilla bean cake, freeze-dried strawberry buttercream, and shortcake crumble.</p></article>
+        <article class="item"><h3>Salted Caramel Pretzel</h3><p>Brown sugar cake, caramel-flavored buttercream, and pretzel crunch.</p></article>
+      </div>
+    </section>
+    <p class="fine-print">Menu availability may vary. Please ask about ingredients and allergens before ordering.</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-name">Crumb Intended</p>
+      <p class="footer-tag">Baking Co.</p>
+    </div>
+    <p class="footer-note">Crumb Intended Baking Co. · Baked with care</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="custom-cakes.html">Custom Cakes</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

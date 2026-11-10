@@ -121,9 +121,8 @@ a { color: inherit; }
   border-radius: 50%;
   background: var(--mist);
   color: var(--olive);
-  font-family: Fraunces, Georgia, serif;
-  font-style: italic;
-  font-weight: 500;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 1;
   padding-top: 3px;
@@ -131,11 +130,10 @@ a { color: inherit; }
 }
 
 .brand-text {
-  font-family: Fraunces, Georgia, serif;
-  font-weight: 500;
-  font-size: 1.48rem;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.15;
 }
 
 .brand-text small {
@@ -262,9 +260,8 @@ a { color: inherit; }
 }
 
 h1, h2, h3 {
-  font-family: Fraunces, Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 500;
-  letter-spacing: -0.03em;
   color: var(--ink);
 }
 
@@ -338,63 +335,67 @@ h1, h2, h3 {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-/* Hero */
+/* Hero — willow is decorative art wrapped around the centered headline,
+   in the same position as the original home page. */
 
 .hero {
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(680px 460px at 8% 55%, rgba(166, 177, 154, 0.34), transparent 68%),
-    linear-gradient(180deg, #f3efe4 0%, var(--cream) 78%);
+  padding: 100px 0 110px;
+  text-align: center;
+  background: var(--cream);
 }
 
-.hero-layout {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 560px);
-  align-items: center;
-  gap: 12px 36px;
-  padding: 42px 0 68px;
-}
-
-.hero-art { min-width: 0; }
-
-.willow {
-  display: block;
-  width: calc(100% + max(0px, (100vw - 1120px) / 2 - 20px));
+.willow-tree {
+  position: absolute;
+  width: 1090px;
   max-width: none;
   height: auto;
-  margin-left: calc(-1 * max(0px, (100vw - 1120px) / 2 - 20px));
+  transform: scale(1.35);
+  transform-origin: left center;
+  left: 0;
+  top: 70px;
+  opacity: 0.35;
   pointer-events: none;
   user-select: none;
+  z-index: 0;
 }
 
-.hero-copy { position: relative; }
+.hero .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .eyebrow::after {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
 
 .hero h1 {
-  margin: 0 0 18px;
-  font-size: clamp(2.9rem, 4.3vw, 4.35rem);
-  line-height: 0.98;
+  max-width: 850px;
+  margin: 18px auto;
+  font-size: clamp(44px, 7vw, 84px);
+  line-height: 1.13;
   color: var(--ink);
 }
 
-.hero h1 .line-soft {
-  display: block;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--olive);
+.hero .lede {
+  margin-inline: auto;
+  color: var(--ink);
 }
 
-.hero .lede { color: var(--ink); }
+.hero .actions { justify-content: center; }
 
-.hero-copy > * {
+.hero .wrap > * {
   animation: rise 0.75s ease both;
 }
 
-.hero-copy > *:nth-child(2) { animation-delay: 0.08s; }
-.hero-copy > *:nth-child(3) { animation-delay: 0.16s; }
-.hero-copy > *:nth-child(4) { animation-delay: 0.24s; }
+.hero .wrap > *:nth-child(2) { animation-delay: 0.08s; }
+.hero .wrap > *:nth-child(3) { animation-delay: 0.16s; }
+.hero .wrap > *:nth-child(4) { animation-delay: 0.24s; }
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(12px); }
@@ -442,7 +443,7 @@ h1, h2, h3 {
 }
 
 .card-index {
-  font-family: Fraunces, Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-size: 1.35rem;
   color: var(--sage-deep);
@@ -516,6 +517,23 @@ h1, h2, h3 {
   opacity: 0.2;
   pointer-events: none;
   user-select: none;
+}
+
+/* Menu: a stronger sage-to-cream fade than the other page heroes. */
+.menu-page main {
+  background:
+    radial-gradient(920px 480px at 88% -8%, rgba(166, 177, 154, 0.9), transparent 62%),
+    linear-gradient(180deg, #a6b19a 0%, #c5d0bc 18%, #dce4d2 42%, #e8eddf 66%, #f8f5ec 100%);
+}
+
+.menu-page .page-hero {
+  background: none;
+  padding-bottom: 28px;
+}
+
+.menu-page .page-hero .eyebrow,
+.menu-page .page-hero h1 {
+  color: var(--ink);
 }
 
 .page-hero h1 {
@@ -634,7 +652,7 @@ h1, h2, h3 {
   background:
     radial-gradient(circle at 50% 42%, rgba(255, 253, 248, 0.95), rgba(232, 237, 223, 0.95));
   color: var(--sage-deep);
-  font-family: Fraunces, Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 500;
   font-size: 1.2rem;
@@ -784,7 +802,7 @@ h1, h2, h3 {
   margin-top: 18px !important;
   padding-top: 16px;
   border-top: 1px solid var(--line);
-  font-family: Fraunces, Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-size: 1.35rem;
   line-height: 1.35;
@@ -833,10 +851,9 @@ h1, h2, h3 {
 
 .footer-name {
   margin: 0;
-  font-family: Fraunces, Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 1.7rem;
   font-weight: 500;
-  letter-spacing: -0.03em;
   color: var(--cream);
 }
 
@@ -930,19 +947,6 @@ h1, h2, h3 {
 /* Responsive */
 
 @media (max-width: 980px) {
-  .hero-layout {
-    display: block;
-    min-height: 0;
-    padding: 8px 0 56px;
-  }
-
-  .hero-art { margin: 0 0 8px; }
-
-  .willow {
-    width: 100%;
-    margin-left: 0;
-  }
-
   .announcement { grid-template-columns: 1fr; }
 
   .announcement-body {
@@ -998,7 +1002,11 @@ h1, h2, h3 {
 
   .section { padding: 64px 0; }
 
+  .hero { padding: 75px 0; }
+
   .page-hero { padding: 48px 0 40px; }
+
+  .menu-page .page-hero { padding-bottom: 12px; }
 
   .page-hero-willow { width: 320px; opacity: 0.16; }
 
@@ -1025,7 +1033,6 @@ h1, h2, h3 {
     clip: rect(0 0 0 0);
   }
 
-  .hero h1 { font-size: clamp(2.7rem, 12vw, 3.4rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {
